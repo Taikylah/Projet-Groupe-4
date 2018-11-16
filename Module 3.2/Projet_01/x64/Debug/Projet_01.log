@@ -1,0 +1,6 @@
+﻿  generationCode.c
+c:\users\vincent\documents\github\projet-groupe-4\projet_01\projet_01\generationcode.c(10): warning C4101: 'i' : variable locale non référencée
+  main.c
+  menu.c
+  Génération de code en cours...
+  Projet_01.vcxproj -> C:\Users\Vincent\Documents\GitHub\Projet-Groupe-4\Projet_01\x64\Debug\Projet_01.exe
