@@ -148,7 +148,7 @@ void recherche(Donnees *tabdon) //Algorithme de recherche séquentielle
 
 	if (e == 1) // e(int booleen) prends la valeur 1 si on trouve la valeur recherchée
 	{
-		printf("Le pouls pour ce temps est de %.2f bpm\n", tabdon[i].pouls);
+		printf("Le pouls pour ce temps est de %.0f bpm\n", tabdon[i].pouls);
 	}
 	else
 	{
@@ -159,16 +159,16 @@ void recherche(Donnees *tabdon) //Algorithme de recherche séquentielle
 
 void moyenne(Donnees *tabdon) //Fonction qui calcul la moyenne entre 2 nombres donnés
 {
-	float somme = 0;
-	float resultat;
+	int somme = 0;
+	int resultat;
 	int i;
-	float nbr1, nbr2;
-	float d = 0;
+	int nbr1, nbr2;
+	int d = 0;
 
 	printf("Calculer la moyenne du pouls entre quelles valeurs du tableau ?\n");
-	scanf("%f", &nbr1);
+	scanf("%i", &nbr1);
 	printf("et ?\n");
-	scanf("%f", &nbr2);
+	scanf("%i", &nbr2);
 
 	if (nbr2 - nbr1 <= 0) // On veut 2 valeurs croissantes pour pouvoir incrémenter correctement ensuite
 	{
@@ -183,6 +183,6 @@ void moyenne(Donnees *tabdon) //Fonction qui calcul la moyenne entre 2 nombres d
 		}
 		resultat = somme / d;
 
-		printf("Moyenne du pouls entre %.2f et %.2f milisecondes : %f bpm", nbr1, nbr2, resultat);
+		printf("Moyenne du pouls entre %i et %i : %i bpm", nbr1, nbr2, resultat);
 	}
 }

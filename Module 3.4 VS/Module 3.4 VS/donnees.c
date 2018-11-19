@@ -6,7 +6,7 @@
 
 int nbr_lignes() //compte le nombre de ligne du fichier csv
 {
-	FILE *csv = fopen("C:\\Users\\Vincent\\Documents\\GitHub\\Projet-Groupe-4\\Module 3.4 VS\\Module 3.4 VS\\ConvertisseurSerialCSV\\Battements.csv", "r"); // Ouvre le .csv
+	FILE *csv = fopen("Battements.csv", "r"); // Ouvre le .csv
 	int c;
 	int nbr_lgn = 0;
 	while ((c = fgetc(csv)) != EOF) // Lit le nombre de lignes jusqu'à ce que fgetc renvoie EOF (fin du fichier)
@@ -24,7 +24,7 @@ int lecturecsv(Donnees *tabdon)
 {
 	FILE* csv = NULL;
 	
-	csv = fopen("C:\\Users\\Vincent\\Documents\\GitHub\\Projet-Groupe-4\\Module 3.4 VS\\Module 3.4 VS\\ConvertisseurSerialCSV\\Battements.csv", "r"); 
+	csv = fopen("Battements.csv", "r"); 
 	int i = 0;
 	int nbr_lgn = nbr_lignes();  // Récupère le nombre de lignes renvoyées par la fonction ci-dessus
 
