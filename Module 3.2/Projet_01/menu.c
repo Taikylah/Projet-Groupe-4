@@ -24,7 +24,7 @@ int afficher_menu() // interface de la fenetre elle affichera les choix suivants
 		printf("erreur \n");
 		exit(-1);
 	}
-	if (a == 5)
+	if (a == 5) // Si on veut une led au choix, on va demander quelle led allumer en appelant la fonction suivante
 	{
 		ecrire_led(a);
 	}

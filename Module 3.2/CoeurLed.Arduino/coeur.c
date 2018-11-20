@@ -6,7 +6,7 @@ int j;
 int n;
 // put your main code here, to run repeatedly:
 
-void battement() //quand PARAM = 1 alors elle actionnera la fonction battement, toutes les Leds s'allument et s'éteignent en même temps
+void battement() //toutes les Leds s'allument et s'éteignent en même temps
 {
   for (n = 4; n <= 13; n++) {
     digitalWrite (n, HIGH);
@@ -17,7 +17,7 @@ void battement() //quand PARAM = 1 alors elle actionnera la fonction battement, 
   }
   delay(500);
 }
-void chenille()  //quand PARAM = 2 alors elle actionnera fonction chenille allume et éteinds les Led progrssivement
+void chenille()  //allume et éteind les Led progressivement
 {
   for (n = 4 ; n <= 13 ; n++) {
     digitalWrite (n, HIGH) ; // allume la DEL sur broche i
@@ -25,9 +25,9 @@ void chenille()  //quand PARAM = 2 alors elle actionnera fonction chenille allum
     digitalWrite (n, LOW) ; // éteint la DEL
   }
 }
-void unsurdeux() //quand PARAM = 3 alors elle actionnera fonction allumage des Led une sur deux
+void unsurdeux() //allume une Led sur deux et les fait clignoter
 {
-  n = 4;
+  n = 4; //tricky, permet d'avoir une boucle while infinie
   while ( n != 0) {
     digitalWrite(4 , HIGH);
     digitalWrite(6 , HIGH);
@@ -43,7 +43,7 @@ void unsurdeux() //quand PARAM = 3 alors elle actionnera fonction allumage des L
     delay(500);
   }
 }
-void unsurtrois() // quand PARAM = 4 alors elle actionnera fonction allumage des Led une sur trois
+void unsurtrois() // allume une Led sur trois et les fait clignoter
 {
   n = 4;
   while ( n != 0) {
@@ -59,7 +59,7 @@ void unsurtrois() // quand PARAM = 4 alors elle actionnera fonction allumage des
     delay(500);
   }
 }
-void uneLedauchoix()
+void uneLedauchoix() // allume la led choisie lors de la création du param.h
 {
   digitalWrite(LED, HIGH);
   delay(500);
@@ -67,7 +67,7 @@ void uneLedauchoix()
   delay(500);
 }
 
-void transition()
+void transition() // Allume les leds 2 par 2 et les fait clignoter en avançant progressivement
 {
   for (n = 4; n <= 13; n++) {
     j = n + 1;
@@ -81,7 +81,7 @@ void transition()
   }
 }
 
-void unsurdeuxchenille()
+void unsurdeuxchenille() // Allume une led sur deux en mode chenille
 {
   for (n = 4; n <= 13; n++) {
     n++;
@@ -92,7 +92,7 @@ void unsurdeuxchenille()
   }
 
 }
-void unsurtroischenille()
+void unsurtroischenille() // Allume une led sur trois en mode chenille
 {
   for (n = 2; n <= 13; n++) {
     n = n+2;

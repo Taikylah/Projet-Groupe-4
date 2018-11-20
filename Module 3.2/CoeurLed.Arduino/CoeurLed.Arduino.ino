@@ -3,13 +3,13 @@
 void setup () { // declaration des led
   for (int n = 4; n <= 13; n++)
   {
-    pinMode(n, OUTPUT); // défini les pins en sortie
+    pinMode(n, OUTPUT); // défini les pins 4 à 13 en sorties
   }
-  for (int n = 4; n <= 13; n++) // eteindre toutes les led (si anomalie)
+  for (int n = 4; n <= 13; n++) // eteind toutes les led (si anomalie)
     digitalWrite(n, LOW);
 }
 
-void loop () { // tout les mode
+void loop () { // Appelle de la fonction voulue selon la valeur de PARAM
   switch (PARAM) {
     case 1: {
         battement ();

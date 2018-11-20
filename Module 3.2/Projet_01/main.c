@@ -7,7 +7,7 @@
 int main() // 
 {
 	int choix;
-	choix = afficher_menu();
+	choix = afficher_menu(); // Permet d'utiliser la valeur retournée par la fonction afficher_menu
 	ecrire_fichier(choix);
 
 	return 0;
