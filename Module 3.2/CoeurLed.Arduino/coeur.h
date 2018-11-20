@@ -7,5 +7,8 @@ void  chenille ();
 void  unsurdeux ();
 void  unsurtrois ();
 void  uneLedallumeeauchoix();
+void  transition();
+void  unsurdeuxchenille();
+void  unsurtroischenille();
 
 #endif

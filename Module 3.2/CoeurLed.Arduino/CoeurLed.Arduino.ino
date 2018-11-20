@@ -2,11 +2,11 @@
 #include "param.h"
 void setup () { // declaration des led
   for (int n = 4; n <= 13; n++)
-
-    for (int n = 4; n <= 13; n++) // eteindre toutes les led (si anomalie)
-      digitalWrite(n, LOW);
-
-  mode();
+  {
+    pinMode(n, OUTPUT); // défini les pins en sortie
+  }
+  for (int n = 4; n <= 13; n++) // eteindre toutes les led (si anomalie)
+    digitalWrite(n, LOW);
 }
 
 void loop () { // tout les mode
@@ -31,6 +31,17 @@ void loop () { // tout les mode
         uneLedauchoix ();
         break;
       }
+    case 6: {
+        transition();
+        break;
+      }
+    case 7: {
+        unsurdeuxchenille();
+        break;
+      }
+    case 8: {
+        unsurtroischenille();
+        break;
+      }
   }
-
 }
