@@ -5,7 +5,7 @@
 
 void ecrire_fichier(int param) { // apres le choix du mode creation du fichier param
 
-	FILE *pointeur = fopen("C:/Users/Charles/Downloads/Projet-Groupe-4-master/Module 3.2/CoeurLed.Arduino/param.h", "w+"); // Créé le fichier param.h (ou le remplace)
+	FILE *pointeur = fopen("C:/Users/Charles/Desktop/Projet-Groupe-4-master/Module 3.2/CoeurLed.Arduino/param.h", "w+"); // Créer le fichier param.h (ou le remplace)
 
 	if (pointeur == NULL)
 	{
@@ -20,7 +20,7 @@ void ecrire_fichier(int param) { // apres le choix du mode creation du fichier p
 
 void ecrire_led(int param) { // Fonction similaire à celle ci-dessus, permet en plus de demander la led que l'on veut allumer si on choisi le mode une led au choix
 
-	FILE *pointeur = fopen("C:/Users/Charles/Downloads/Projet-Groupe-4-master/Module 3.2/CoeurLed.Arduino/param.h", "w+");
+	FILE *pointeur = fopen("C:/Users/Charles/Desktop/Projet-Groupe-4-master/Module 3.2/CoeurLed.Arduino/param.h", "w+");
 	int led;
 
 	printf("Quelle LED voulez-vous allumer ? (numero du PIN) :");
