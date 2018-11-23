@@ -38,7 +38,7 @@ void menu(Donnees *tabdon)
 			
 			for (j = 0; j < nbr_lgn; j++)
 			{
-				printf("%d;%.0f\n", tabdon[j].temps, tabdon[j].pouls); //Affiche les valeurs du tableau une par une jusqu'à ce qu'on atteigne le nombre de lignes du fichier
+				printf("%d;%d\n", tabdon[j].temps, tabdon[j].pouls); //Affiche les valeurs du tableau une par une jusqu'à ce qu'on atteigne le nombre de lignes du fichier
 			}
 		}
 
@@ -50,7 +50,7 @@ void menu(Donnees *tabdon)
 
 			for (j = 0; j < nbr_lgn; j++)
 			{
-				printf("%d;%.0f\n", tabdon[j].temps, tabdon[j].pouls);
+				printf("%d;%d\n", tabdon[j].temps, tabdon[j].pouls);
 			}
 		}
 
@@ -62,7 +62,7 @@ void menu(Donnees *tabdon)
 
 			for (j = 0; j < nbr_lgn; j++)
 			{
-				printf("%d;%.0f\n", tabdon[j].temps, tabdon[j].pouls);
+				printf("%d;%d\n", tabdon[j].temps, tabdon[j].pouls);
 			}
 		}
 
@@ -74,7 +74,7 @@ void menu(Donnees *tabdon)
 
 			for (j = 0; j < nbr_lgn; j++)
 			{
-				printf("%d;%.0f\n", tabdon[j].temps, tabdon[j].pouls);
+				printf("%d;%d\n", tabdon[j].temps, tabdon[j].pouls);
 			}
 		}
 
@@ -86,7 +86,7 @@ void menu(Donnees *tabdon)
 
 			for (j = 0; j < nbr_lgn; j++)
 			{
-				printf("%d;%.0f\n", tabdon[j].temps, tabdon[j].pouls);
+				printf("%d;%d\n", tabdon[j].temps, tabdon[j].pouls);
 			}
 		}
 
@@ -111,14 +111,14 @@ void menu(Donnees *tabdon)
 		{
 			tridecroi_pouls(tabdon); //Je tri d'abord les donnees en ordre décroissant du pouls afin d'obtenir le pouls maximum dans la première case du tableau, avec le temps qui correspond
 
-			printf("Le maximum de pouls est %.0f bpm a %d milisecondes", tabdon[0].pouls, tabdon[0].temps);
+			printf("Le maximum de pouls est %d bpm a %d milisecondes", tabdon[0].pouls, tabdon[0].temps);
 		}
 
 		if (m == 10)
 		{
 			tricroi_pouls(tabdon); //Je tri d'abord les donnees en ordre croissant du pouls afin d'obtenir le pouls minimum dans la première case du tableau, avec le temps qui correspond
 
-			printf("Le minimum de pouls est %.0f bpm a %d milisecondes", tabdon[0].pouls, tabdon[0].temps);
+			printf("Le minimum de pouls est %d bpm a %d milisecondes", tabdon[0].pouls, tabdon[0].temps);
 		}
 
 		printf("\n\n"); //Permet une présentation plus propre

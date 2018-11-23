@@ -1,11 +1,6 @@
 ﻿  actions.c
-c:\users\charles\downloads\projet-groupe-4-master\module 3.4 vs\module 3.4 vs\actions.c(29): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-c:\users\charles\downloads\projet-groupe-4-master\module 3.4 vs\module 3.4 vs\actions.c(31): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-c:\users\charles\downloads\projet-groupe-4-master\module 3.4 vs\module 3.4 vs\actions.c(57): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-c:\users\charles\downloads\projet-groupe-4-master\module 3.4 vs\module 3.4 vs\actions.c(59): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-c:\users\charles\downloads\projet-groupe-4-master\module 3.4 vs\module 3.4 vs\actions.c(83): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-c:\users\charles\downloads\projet-groupe-4-master\module 3.4 vs\module 3.4 vs\actions.c(85): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-c:\users\charles\downloads\projet-groupe-4-master\module 3.4 vs\module 3.4 vs\actions.c(115): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-c:\users\charles\downloads\projet-groupe-4-master\module 3.4 vs\module 3.4 vs\actions.c(117): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-c:\users\charles\downloads\projet-groupe-4-master\module 3.4 vs\module 3.4 vs\actions.c(181): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-  Module 3.4 VS.vcxproj -> C:\Users\Charles\Downloads\Projet-Groupe-4-master\Module 3.4 VS\Debug\Module 3.4 VS.exe
+  donnees.c
+  main.c
+  menu.c
+  Génération de code en cours...
+  Module 3.4 VS.vcxproj -> C:\Users\Charles\Desktop\CESI\PROJET 1\Projet-Groupe-4-master\Module 3.4 VS\Debug\Module 3.4 VS.exe

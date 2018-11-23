@@ -148,7 +148,7 @@ void recherche(Donnees *tabdon) //Algorithme de recherche séquentielle
 
 	if (e == 1) // e(int booleen) prends la valeur 1 si on trouve la valeur recherchée
 	{
-		printf("Le pouls pour ce temps est de %.0f bpm\n", tabdon[i].pouls);
+		printf("Le pouls pour ce temps est de %d bpm\n", tabdon[i].pouls);
 	}
 	else
 	{

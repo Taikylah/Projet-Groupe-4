@@ -5,7 +5,7 @@ typedef struct Donnees Donnees;
 struct Donnees // Structure de données utilisées dans mon tableau "tabdon"
 {
 	int temps;
-	float pouls;
+	int pouls;
 };
 
 int lecturecsv(Donnees *tabdon);

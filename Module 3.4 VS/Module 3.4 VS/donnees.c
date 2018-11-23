@@ -6,7 +6,7 @@
 
 int nbr_lignes() //compte le nombre de ligne du fichier csv
 {
-	FILE *csv = fopen("Battements.csv", "r"); // Ouvre le .csv
+	FILE *csv = fopen("C:\\Users\\Charles\\Desktop\\CESI\\PROJET 1\\Projet-Groupe-4-master\\Module 3.3\\ConvertisseurSerialCSV\\Battements.csv", "r"); // Ouvre le .csv
 	int c;
 	int nbr_lgn = 0;
 	while ((c = fgetc(csv)) != EOF) // Lit le nombre de lignes jusqu'à ce que fgetc renvoie EOF (fin du fichier)
@@ -24,7 +24,7 @@ int lecturecsv(Donnees *tabdon)
 {
 	FILE* csv = NULL;
 	
-	csv = fopen("Battements.csv", "r"); 
+	csv = fopen("C:\\Users\\Charles\\Desktop\\CESI\\PROJET 1\\Projet-Groupe-4-master\\Module 3.3\\ConvertisseurSerialCSV\\Battements.csv", "r"); 
 	int i = 0;
 	int nbr_lgn = nbr_lignes();  // Récupère le nombre de lignes renvoyées par la fonction ci-dessus
 
@@ -36,7 +36,7 @@ int lecturecsv(Donnees *tabdon)
 	{		
 		for (i=0;i<nbr_lgn;i++)
 		{
- 			fscanf(csv, "%d;%f", &(tabdon[i].temps), &(tabdon[i].pouls)); // Rempli mon tableau de structure "tabdon" avec les valeurs du csv
+ 			fscanf(csv, "%d;%d", &(tabdon[i].temps), &(tabdon[i].pouls)); // Rempli mon tableau de structure "tabdon" avec les valeurs du csv
 		}
 
 		fclose(csv);
