@@ -29,7 +29,7 @@ void affichagebpm(){
     Serial.print(time);                    //On affiche le résultat
     Serial.print(";");
     Serial.println(Bpm);
-                      //On remet les compteurs à zéro.
+    Compteur = 0;                           //On remet les compteurs à zéro.
     cond = cond + 10000;                   //On augmente cond de 10s pour avoir d'autres valeurs à 10s d'intervalles à chaque fois 
     Bpm = 0;
     
